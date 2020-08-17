@@ -4,6 +4,8 @@
    1. request库文档查看。
    2. beautifulsoup库文档查看。
    3. 导出数据到json。
+已完成，见get_moives.py
+----
 2. 从json文件中读取数据到数据库。
    1. 腾讯云数据库使用。
    2. json --> 数据库
