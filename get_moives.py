@@ -54,12 +54,12 @@ def get_one_page(url):
             print(movie_title,'抓取演员失败',reason)
             pass
         movie_dict={
-            '排名':movie_NO,
-            '电影名':movie_title,
-            '封面':movie_pic,
-            '导演':movie_director,
-            '主演':movie_stars,
-            '年份':movie_year
+            'rank':movie_NO,
+            'movie_title':movie_title,
+            'movie_pic':movie_pic,
+            'movie_director':movie_director,
+            'movie_stars':movie_stars,
+            'movie_year':movie_year
         }
         movies_list.append(movie_dict)
         
