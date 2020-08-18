@@ -6,7 +6,8 @@ __pycache__/
 pics/
 # C extensions
 *.so
-
+# config.json
+config.json
 # Distribution / packaging
 .Python
 build/
