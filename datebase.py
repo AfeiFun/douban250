@@ -37,4 +37,16 @@ def insert_movie_in_database(movie,connection):
         # 单个项目出错后，不影响后续的导入
         pass
 
+def get_movie_from_database(connection,rank):
+    try:
+        with connection.cursor() as cursor:
+            sql="select * from `movie250`.`movies_list` where  `rank`=%s"%rank
+            cursor.execute(sql)
+            movie_list=cursor.fetchone()
+            print(movie_list)
+            return movie_list
+    except pymysql.err.DataError as reason:
+        print(movie_list,reason)
+        pass
+
 
